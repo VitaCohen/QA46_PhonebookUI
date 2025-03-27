@@ -1,32 +1,34 @@
 package com.phonebook.test;
 
+import com.phonebook.models.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class CreateAccountTests extends TestBase{
 
-
+SoftAssert softAssert = new SoftAssert();
     @Test(enabled = false)
     public void newUserRegistrationPositiveTest(){
         int i =(int)((System.currentTimeMillis()/1000)%3600);
-        clickOnLoginLink();
-        fillRegisterLoginForm(new User().setMail("com04@gmail.com").setPassword("1234Aa$$$"));
-        clickOnRegistrationButton();
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillRegisterLoginForm(new User().setMail("com04@gmail.com").setPassword("1234Aa$$$"));
+        app.getUser().clickOnRegistrationButton();
        // Assert.assertTrue(isAlertDisplayed());
         //verify SignOut button is displayd
-       Assert.assertTrue(isSignButtonPresent());
+       Assert.assertTrue(app.getUser().isSignButtonPresent());
 
 
     }
 
     @Test
     public void existedUserRegistrationNegativeTest(){
-        clickOnLoginLink();
-        fillRegisterLoginForm(new User().setMail("com04@gmail.com").setPassword("1234Aa$$$"));
-        clickOnRegistrationButton();
-        Assert.assertTrue(isAlertDisplayed());
-
-
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillRegisterLoginForm(new User().setMail("com04@gmail.com").setPassword("1234Aa$$$"));
+        app.getUser().clickOnRegistrationButton();
+        softAssert.assertTrue(app.getUser().isAlertDisplayed());
+        softAssert.assertTrue(app.getUser().isErrorMessagePresent());
+        softAssert.assertAll();
     }
 
 

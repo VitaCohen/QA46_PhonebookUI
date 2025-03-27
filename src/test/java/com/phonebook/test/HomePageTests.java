@@ -10,7 +10,7 @@ public class HomePageTests extends TestBase{
     public void isHomeComponentPresentTest(){
         // driver.findElements(By.cssSelector("div:nth-child(2)>div>div>h1"));
         //System.out.println("Home Component "+isHomeComponentPresent());
-        Assert.assertTrue(isHomeComponentPresent());
+        Assert.assertTrue(app.getHome().isHomeComponentPresent());
 
     }
 
