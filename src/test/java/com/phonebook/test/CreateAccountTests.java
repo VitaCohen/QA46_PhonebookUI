@@ -2,6 +2,7 @@ package com.phonebook.test;
 
 import com.phonebook.models.User;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -16,10 +17,18 @@ SoftAssert softAssert = new SoftAssert();
         app.getUser().clickOnRegistrationButton();
        // Assert.assertTrue(isAlertDisplayed());
         //verify SignOut button is displayd
+
        Assert.assertTrue(app.getUser().isSignButtonPresent());
 
+   }
 
-    }
+   @BeforeMethod
+   public void ensurePrecondition(){
+        if(!app.getUser().isLoginLinkPresent()){
+            app.getUser().clickOnSignOutButton();
+        }
+   }
+
 
     @Test
     public void existedUserRegistrationNegativeTest(){

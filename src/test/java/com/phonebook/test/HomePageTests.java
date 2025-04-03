@@ -1,10 +1,18 @@
 package com.phonebook.test;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class HomePageTests extends TestBase{
 
+    @BeforeMethod
+    public void ensurePrecondition(){
+        if(!app.getHome().isHomeComponentPresent()){ // если этого элта нет....
+            app.getHome().clickOnHomeLink();
+
+        }
+    }
 
     @Test
     public void isHomeComponentPresentTest(){
