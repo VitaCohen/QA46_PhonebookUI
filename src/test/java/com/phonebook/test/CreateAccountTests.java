@@ -1,5 +1,6 @@
 package com.phonebook.test;
 
+import com.phonebook.data.UserData;
 import com.phonebook.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -13,7 +14,7 @@ SoftAssert softAssert = new SoftAssert();
     public void newUserRegistrationPositiveTest(){
         int i =(int)((System.currentTimeMillis()/1000)%3600);
         app.getUser().clickOnLoginLink();
-        app.getUser().fillRegisterLoginForm(new User().setMail("com04@gmail.com").setPassword("1234Aa$$$"));
+        app.getUser().fillRegisterLoginForm(new User().setMail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickOnRegistrationButton();
        // Assert.assertTrue(isAlertDisplayed());
         //verify SignOut button is displayd
@@ -33,7 +34,7 @@ SoftAssert softAssert = new SoftAssert();
     @Test
     public void existedUserRegistrationNegativeTest(){
         app.getUser().clickOnLoginLink();
-        app.getUser().fillRegisterLoginForm(new User().setMail("com04@gmail.com").setPassword("1234Aa$$$"));
+        app.getUser().fillRegisterLoginForm(new User().setMail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickOnRegistrationButton();
         softAssert.assertTrue(app.getUser().isAlertDisplayed());
         softAssert.assertTrue(app.getUser().isErrorMessagePresent());

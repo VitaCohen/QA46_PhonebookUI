@@ -1,5 +1,6 @@
 package com.phonebook.test;
 
+import com.phonebook.data.UserData;
 import com.phonebook.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -17,7 +18,7 @@ public class LoginTests extends TestBase {
     @Test(priority=2)
     public void loginPositiveTest() {
         app.getUser().clickOnLoginLink();
-        app.getUser().fillRegisterLoginForm(new User().setMail("com04@gmail.com").setPassword("1234Aa$$$"));
+        app.getUser().fillRegisterLoginForm(new User().setMail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clicOnLoginButton();
         Assert.assertTrue(app.getUser().isSignButtonPresent());
     }
