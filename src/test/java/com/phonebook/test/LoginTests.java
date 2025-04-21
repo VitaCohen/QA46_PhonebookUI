@@ -17,6 +17,7 @@ public class LoginTests extends TestBase {
     }
     @Test(priority=2)
     public void loginPositiveTest() {
+        logger.info("Login with data --> " +UserData.EMAIL+"****" + UserData.PASSWORD);
         app.getUser().clickOnLoginLink();
         app.getUser().fillRegisterLoginForm(new User().setMail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clicOnLoginButton();
