@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.test.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-21T17:24:16" hostname="ASUS_16" time="1.789">
+  <properties/>
+  <testcase name="existedUserRegistrationNegativeTest" classname="com.phonebook.test.CreateAccountTests" time="1.789"/>
+  <system-out><![CDATA[20:24:16.051 [Test worker] INFO  com.phonebook.test.TestBase -- Start testexistedUserRegistrationNegativeTest[]
+20:24:16.055 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find elementsBy.cssSelector: [href='/login']
+20:24:16.056 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************
+20:24:16.104 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is1
+20:24:16.104 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************
+20:24:16.106 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.cssSelector: [href='/login']
+20:24:16.106 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:16.148 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.cssSelector: [href='/login']
+20:24:16.151 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:16.275 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: email
+20:24:16.276 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:16.321 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: email
+20:24:16.321 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:16.429 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: email
+20:24:16.430 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:16.493 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: email
+20:24:16.494 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:16.545 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: email
+20:24:16.546 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:16.577 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: email
+20:24:16.578 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:16.655 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+20:24:16.656 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:16.692 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: password
+20:24:16.692 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:16.802 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+20:24:16.803 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:16.840 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: password
+20:24:16.840 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:16.889 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+20:24:16.889 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:16.919 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: password
+20:24:16.920 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:17.054 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: registration
+20:24:17.055 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:17.089 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: registration
+20:24:17.090 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:17.241 [Test worker] INFO  com.phonebook.utils.MyListener -- The test has a problem
+20:24:17.243 [Test worker] INFO  com.phonebook.utils.MyListener -- ******************************************
+20:24:17.243 [Test worker] INFO  com.phonebook.utils.MyListener -- Method-->alert
+20:24:17.245 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:17.245 [Test worker] INFO  com.phonebook.utils.MyListener -- Target Exception-->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd185e502c351f95e521e2071c9e7dd1, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\cohen\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57468/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd185e502c351f95e521e2071c9e7dd1
+20:24:17.245 [Test worker] INFO  com.phonebook.utils.MyListener -- *********************************************
+20:24:17.245 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target-->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@70972170
+20:24:17.247 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+20:24:17.855 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find elementsBy.cssSelector: .login_login__3EHKB>div
+20:24:17.855 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************
+20:24:17.894 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is1
+20:24:17.894 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************
+20:24:17.897 [Test worker] INFO  com.phonebook.test.TestBase -- PASSED: existedUserRegistrationNegativeTest
+20:24:17.899 [Test worker] INFO  com.phonebook.test.TestBase -- Stop test
+20:24:17.901 [Test worker] INFO  com.phonebook.test.TestBase -- =====================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

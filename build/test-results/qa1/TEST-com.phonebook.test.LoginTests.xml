@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.test.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-21T17:24:13" hostname="ASUS_16" time="2.648">
+  <properties/>
+  <testcase name="loginNegativeWithoutEmailTest" classname="com.phonebook.test.LoginTests" time="2.648"/>
+  <system-out><![CDATA[20:24:13.280 [Test worker] INFO  com.phonebook.test.TestBase -- Start testloginNegativeWithoutEmailTest[]
+20:24:13.283 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find elementsBy.cssSelector: [href='/login']
+20:24:13.284 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************
+20:24:13.376 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is1
+20:24:13.377 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************
+20:24:13.382 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.cssSelector: [href='/login']
+20:24:13.383 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:13.434 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.cssSelector: [href='/login']
+20:24:13.434 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:13.565 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+20:24:13.565 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:13.656 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: password
+20:24:13.657 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:13.771 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+20:24:13.771 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:13.837 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: password
+20:24:13.839 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:13.899 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: password
+20:24:13.899 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:13.937 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: password
+20:24:13.938 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:14.057 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will findBy.name: login
+20:24:14.057 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:14.128 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator foundBy.name: login
+20:24:14.129 [Test worker] INFO  com.phonebook.utils.MyListener -- ***************************************************
+20:24:14.317 [Test worker] INFO  com.phonebook.utils.MyListener -- The test has a problem
+20:24:14.317 [Test worker] INFO  com.phonebook.utils.MyListener -- ******************************************
+20:24:14.318 [Test worker] INFO  com.phonebook.utils.MyListener -- Method-->alert
+20:24:14.318 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:14.321 [Test worker] INFO  com.phonebook.utils.MyListener -- Target Exception-->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd185e502c351f95e521e2071c9e7dd1, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\cohen\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57468/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd185e502c351f95e521e2071c9e7dd1
+20:24:14.322 [Test worker] INFO  com.phonebook.utils.MyListener -- *********************************************
+20:24:14.322 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target-->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@6ed16657
+20:24:14.322 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+20:24:14.863 [Test worker] INFO  com.phonebook.utils.MyListener -- The test has a problem
+20:24:14.865 [Test worker] INFO  com.phonebook.utils.MyListener -- ******************************************
+20:24:14.865 [Test worker] INFO  com.phonebook.utils.MyListener -- Method-->alert
+20:24:14.866 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:14.867 [Test worker] INFO  com.phonebook.utils.MyListener -- Target Exception-->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd185e502c351f95e521e2071c9e7dd1, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\cohen\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57468/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd185e502c351f95e521e2071c9e7dd1
+20:24:14.870 [Test worker] INFO  com.phonebook.utils.MyListener -- *********************************************
+20:24:14.870 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target-->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@7b6e5c12
+20:24:14.871 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+20:24:15.414 [Test worker] INFO  com.phonebook.utils.MyListener -- The test has a problem
+20:24:15.415 [Test worker] INFO  com.phonebook.utils.MyListener -- ******************************************
+20:24:15.419 [Test worker] INFO  com.phonebook.utils.MyListener -- Method-->alert
+20:24:15.421 [Test worker] INFO  com.phonebook.utils.MyListener -- *******************************************
+20:24:15.421 [Test worker] INFO  com.phonebook.utils.MyListener -- Target Exception-->org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=135.0.7049.85)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd185e502c351f95e521e2071c9e7dd1, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\cohen\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57468/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd185e502c351f95e521e2071c9e7dd1
+20:24:15.425 [Test worker] INFO  com.phonebook.utils.MyListener -- *********************************************
+20:24:15.425 [Test worker] INFO  com.phonebook.utils.MyListener -- Object target-->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@4ee6291f
+20:24:15.425 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+20:24:16.042 [Test worker] INFO  com.phonebook.test.TestBase -- PASSED: loginNegativeWithoutEmailTest
+20:24:16.042 [Test worker] INFO  com.phonebook.test.TestBase -- Stop test
+20:24:16.043 [Test worker] INFO  com.phonebook.test.TestBase -- =====================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
